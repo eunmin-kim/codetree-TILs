@@ -1,0 +1,5 @@
+a = input()
+b = input()
+a_r = a.replace(" ","")
+b_r = b.replace(" ","")
+print(f"{a_r}{b_r}")
