@@ -13,5 +13,5 @@ for i in words_arr:
         cnt += 1
         word_len += len(i)
 
-avg = word_len // cnt
+avg = round(word_len // cnt,2)
 print(f"{cnt} {avg:.2f}")
