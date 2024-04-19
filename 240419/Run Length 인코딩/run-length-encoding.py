@@ -22,7 +22,8 @@ num_ans.append(cnt)
 
 # print(f"{len(word_ans)} {len(num_ans)}")
 # print(f"{word_ans[1]} {num_ans[1]}")
-print(f"{len(word_ans)+len(num_ans)}")
+a_str = str(len(word_ans)+len(num_ans))
+print(f"{a_str}")
 for i in range(len(word_ans)):
 
     print(f"{word_ans[i]}{num_ans[i]}",end="")
