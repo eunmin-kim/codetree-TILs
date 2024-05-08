@@ -16,6 +16,10 @@ else:
             index = i+1
             break
         for j in range(i,len(b)):
-            if a[i] == b[j] or a[i+1] == b[j]:
-                index = i
+
+            if a[i] == b[j]:
+                index = j+1
+                continue
+            if a[i+1] == b[j]:
+                index = i+1
     print(index)
