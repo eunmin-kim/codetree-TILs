@@ -18,8 +18,10 @@ else:
         for j in range(i,len(b)):
 
             if a[i] == b[j]:
-                index = j+1
+                # index = j+1
                 continue
+            else:
+                index = j+1
             if a[i+1] == b[j]:
                 index = i+1
     print(index)
