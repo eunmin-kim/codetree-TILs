@@ -5,4 +5,7 @@ for i in range(len(a)-1):
     if a[i] == b:
         index = i
         break
-print(index)
+if index == -1:
+    print("No")
+else:
+    print(index)
