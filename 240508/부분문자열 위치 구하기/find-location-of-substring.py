@@ -9,7 +9,7 @@ else:
         is_match = False
         tmp = len(b)
         if tmp == 1:
-            if a[i+1] == b[0]:
+            if a[i+1] == b[0] and a[i+1] == b[len(b)-1]:
                 index = i+1
                 break
         for j in range(len(b)-1):
