@@ -1,7 +1,7 @@
 a, b = map(str, input().split())
 
 index = -1
-for i in range(len(a)-1):
+for i in range(len(a)):
     if a[i] == b:
         index = i
         break
