@@ -10,6 +10,7 @@ else:
         for j in range(len(b)-1):
             if a[i] == b[j] and a[i+1] == b[j+1]:
                 is_match = True
+                
         if is_match == True:
             index = i
             break
