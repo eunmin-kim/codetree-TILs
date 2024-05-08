@@ -15,13 +15,18 @@ else:
         if a[i+1] == b[0] and len(b) == 1:
             index = i+1
             break
+        isCheck = False
         for j in range(i,len(b)):
 
             if a[i] == b[j]:
                 # index = j+1
+                isCheck = True
                 continue
             else:
-                index = j+1
+                if isCheck == True:
+                    index = j+1
+                else:
+                    index = -1
             if a[i+1] == b[j]:
                 index = i+1
     print(index)
