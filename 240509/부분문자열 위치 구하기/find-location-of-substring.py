@@ -1,3 +1,4 @@
+import sys
 target = input()
 search = input()
 index = -1
@@ -10,5 +11,5 @@ for i in range(len(target)):
     
     if is_matched == True:
         print(i)
-        exit()
+        sys.exit()
 print(index)
