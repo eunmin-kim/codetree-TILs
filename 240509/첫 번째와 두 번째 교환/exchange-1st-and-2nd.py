@@ -1,15 +1,15 @@
 a = input()
-a = list(a)
-tmp = a[0]
-tmp2 = a[1]
+d = list(a)
+first_char = d[0]
+second_char = d[1]
 
-for i in range(len(a)):
-    if a[i] == tmp:
-        a[i] = tmp2
-        continue
-    elif a[i] == tmp2:
-        a[i] == tmp
-        continue
+# 모든 문자에 대해 반복
+for i in range(len(d)):
+    if d[i] == first_char:
+        d[i] = second_char
+    elif d[i] == second_char:
+        d[i] = first_char
 
-c = ''.join(a)
+# 결과 문자열 생성
+c = ''.join(d)
 print(c)
