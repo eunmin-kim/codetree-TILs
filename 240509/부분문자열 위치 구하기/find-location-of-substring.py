@@ -1,14 +1,14 @@
 target = input()
 search = input()
 index = -1
-for i in range(len(target)-1):
-    is_matched = False
+for i in range(len(target)):
+
+    is_matched = True
     for j in range(len(search)):
-        if target[i] == search[0] and target[i+1] == search[1] and target[len(target)-1] == search[len(search)-1]:
-            is_matched = True
-            index = i
-            break
+        if target[i+j] != search[j]:
+            is_matched = False
+    
     if is_matched == True:
-        print(index)
+        print(i)
         exit()
 print(index)
