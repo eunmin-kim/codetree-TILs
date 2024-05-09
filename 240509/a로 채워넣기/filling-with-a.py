@@ -1,3 +1,6 @@
 a = input()
-a = a[:1] + "a" + a[2:9]+"a"+a[len(a)-1]
-print(a)
+l_a = list(a)
+l_a[1] = 'a'
+l_a[len(a)-2] = 'a'
+b = ''.join(l_a)
+print(b)
