@@ -4,7 +4,7 @@ index = -1
 for i in range(len(target)):
     is_matched = False
     for j in range(len(search)):
-        if target[i] == search[j]:
+        if target[i] == search[0]:
             is_matched = True
             index = i
             break
